@@ -111,15 +111,15 @@ body {
 @media screen and (max-width: 600px){
   .contenedor aside{
     display: flex;
-    height: 80px;
+    height: 100px;
     width: 100%;
-    /* border-radius: 15px; */
+    border-radius: 15px;
     box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.55),2px 8px 10px 4px rgba(0, 0, 0, 0.33);
     flex: none;
     align-items: flex-start;
     transition: all .3s ease-in-out;
     margin-top: 1rem;
-    position: absolute;
+    position: sticky;
     z-index: 1000;
     top: 0;
     right: 0;
@@ -167,12 +167,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
   }
   .contenedor aside .cont-img img {
-    width: 12%;
-    padding: 1px;
-    margin-left: 1rem;
-    margin-top: .6rem;
+    width: 16%;
+    padding: .5rem;
+
   }
   .contenedor aside .cont-desc{
     display: none;
@@ -182,6 +182,8 @@ body {
   }
   .contenedor aside .cont-img label{
     display: block;
+    height: 100%;
+    cursor: pointer;
   }
   .contenedor aside .cont-img input{
     display: block;
