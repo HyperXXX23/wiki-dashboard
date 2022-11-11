@@ -144,6 +144,9 @@ body {
   height: 10%;
   border-radius: 15px;
   background-color: #e6e6e6;
+  position: relative;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
 }
 
 .contenedor aside .cont-img {
@@ -193,9 +196,24 @@ body {
     height: 100%;
     width: 100px;
     cursor: pointer;
-    padding: 2rem 2rem;
+    padding: 1.5rem 1.5rem;
     justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
   }
+
+  .contenedor #check:checked ~ aside label .div-bar2{
+    transform: translate(-200px);
+  }
+  .contenedor #check:checked ~ aside label .div-bar1{
+    transform: rotate(135deg);
+  }
+  .contenedor #check:checked ~ aside label .div-bar3{
+    transform: rotate(45deg);
+  }
+
+
   .contenedor aside .cont-img input{
     display: block;
   }
