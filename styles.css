@@ -139,6 +139,13 @@ body {
   }
 }
 
+.contenedor aside .div-bar {
+  width: 100%;
+  height: 10%;
+  border-radius: 15px;
+  background-color: #e6e6e6;
+}
+
 .contenedor aside .cont-img {
   width: 100%;
   display: flex;
@@ -181,9 +188,13 @@ body {
     display: none;
   }
   .contenedor aside .cont-img label{
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    width: 100px;
     cursor: pointer;
+    padding: 2rem 2rem;
+    justify-content: space-around;
   }
   .contenedor aside .cont-img input{
     display: block;
@@ -203,7 +214,7 @@ body {
     position: absolute;
     border-radius: 15px;
     left: -120%;
-    top: 100px;
+    top: 120px;
     background: var(--lightgrey);
     z-index: 10000;
     width: 100%;
