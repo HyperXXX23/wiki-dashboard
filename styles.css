@@ -20,9 +20,12 @@ body {
   background: var(--background);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 98vh;
+  height: calc(100vh - 1rem);
   color: #fff;
   overflow: hidden;
+  min-height: 100vh;
+  
+  
 }
 
 @media screen and (max-width: 600px){
@@ -114,15 +117,17 @@ body {
     transition: all .3s ease-in-out;
   }
   .contenedor #check:checked ~ aside{
-    height: 99vh;
-    position: absolute;
-    top: 5;
-    z-index: 1000;
-    width: 90%;
-    height: 90vh;
+    /* height: 50%; */
+    
+    
+    
   }
   .contenedor #check:checked ~ aside nav{
-    display: flex;
+    left: 0;
+  }
+
+  .contenedor #check:checked ~ main{
+
   }
 }
 
@@ -185,18 +190,18 @@ body {
 @media screen and (max-width: 600px){
   .contenedor aside nav{
     position: absolute;
-    left: 0;
-    top: 10%;
+    border-radius: 15px;
+    left: -120%;
+    top: 100px;
     background: var(--lightgrey);
     z-index: 10000;
     width: 100%;
-    height: 100vh;
-    display: none;
-    background: transparent;
+    height: 88vh;
+    display: flex;
+    background: #18181ce5;
     align-items: center;
     justify-content: flex-start;
-    animation-delay: .3s;
-  }
+    transition: all .5s ease-in-out;
 }
 
 .contenedor aside nav a {
@@ -210,6 +215,13 @@ body {
   background: transparent;
   z-index: 10;
   overflow: hidden;
+}
+@media screen and (max-width: 600px){
+  .contenedor aside nav a {
+    width: 100%;
+    text-align: center;
+
+  }
 }
 
 .contenedor aside nav a .bg-hov {
@@ -254,6 +266,7 @@ body {
 
 @media screen and (max-width: 600px){ 
   .contenedor main{
+    height: 100vh;
     padding: 1rem;
     border-radius: 10px;
     font-size: 1.1rem;
@@ -471,4 +484,4 @@ footer{
   border-radius: 20px;
 }
 
-/*Articulos*/
+/*Articulos*/}
