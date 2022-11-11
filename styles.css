@@ -117,6 +117,7 @@ body {
     flex: none;
     align-items: flex-start;
     transition: all .3s ease-in-out;
+    margin-top: 1rem;
   }
   .contenedor #check:checked ~ aside{
     /* height: 50%; */
