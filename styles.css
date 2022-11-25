@@ -56,7 +56,7 @@ body {
 }
 
 .contenedor {
-  transform: translate(-100%);
+  /* transform: translate(-100%); */
   margin: 1rem auto 0 auto;
   width: 90%;
   max-width: 1600px;
